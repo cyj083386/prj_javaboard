@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+  <environments default="development">
+    <environment id="development">
+      <transactionManager type="JDBC"/>
+      <dataSource type="POOLED">
+        <property name="driver" value="org.mariadb.jdbc.Driver"/>
+        <property name="url" value="jdbc:mariadb://127.0.0.1:3306/addr_prj"/>
+        <property name="username" value="root"/>
+        <property name="password" value="12345"/>
+      </dataSource>
+    </environment>
+  </environments>
+<!-- mappers엘리먼트는 SQL 코드와 매핑 정의를 가지는 XML 파일인 mapper 의 목록을 지정한다. -->
+  <mappers>
+    <mapper resource="AddrMapper.xml"/>
+  </mappers>
+   
+</configuration>
