@@ -1,3 +1,7 @@
+<!-- 트랜잭션을 제어하기 위한 TransactionManager와 함께
+데이터 베이스 Connection 인스턴스를 가져오기 위한 DataSource를 포함한다.
+xml은 규칙적으로 데이터를 표현하는 문서. 어떤 데이터인지를 구조화해서 명시-->
+
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE configuration
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
@@ -14,7 +18,8 @@
       </dataSource>
     </environment>
   </environments>
-<!-- mappers엘리먼트는 SQL 코드와 매핑 정의를 가지는 XML 파일인 mapper 의 목록을 지정한다. -->
+<!-- mappers엘리먼트는 SQL 코드와 매핑 정의를 가지는 XML 파일인 mapper 의 목록을 지정한다. 등록!
+경로는 폴더/AddrMapper.xml 로 지정-->
   <mappers>
     <mapper resource="AddrMapper.xml"/>
   </mappers>

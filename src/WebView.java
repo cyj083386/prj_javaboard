@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+//jsp로 대체되는 부분이다. 나머지 부분은 jsp 방식으로 변경시에도 동일하다.
 public class WebView {
 
 	public void printAddr(ArrayList<Addr> addrList) {

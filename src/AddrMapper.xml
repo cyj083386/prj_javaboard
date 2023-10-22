@@ -2,10 +2,12 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="AddrMapper">
-
-	<!-- 해당 sql을 메서드와 연결해서 처리. id는 메서드명, resultType 리턴, parameterType 매개변수 -->
-    <select id="getAddresses" resultType="Addr">
+<mapper namespace="AddrMapper"> <!-- 패키지.인터페이스명 -->
+	<!-- 해당 sql을 메서드와 연결해서 처리. id는 메서드명, resultType 리턴, parameterType 매개변수
+	jdbc로 접근시에는 java 방식으로 sql문을 처리했으나 mybatis 프레임워크로 매핑하면
+	아래와 같이 간편한 사용이 가능하다.
+	3개를 명시하여 매핑후 사용한다. 1. sql 문 2. sql 처리할 메소드 3. 데이터(타입)-->
+    <select id="getAddresses" resultType="Addr"> <!-- resultType에는 패키지명.타입 -->
       SELECT *
       FROM t_address
     </select>
@@ -18,7 +20,7 @@
     	phone = #{phone}
     </insert >
 
-	<!--public void updateAddress(Addr addr); 를 바로 가져옴-->
+	<!--public void updateAddress(Addr addr); 를 바로 가져옴. 리턴이 없으므로 resultType 생략가능-->
   	<update id="updateAddress" parameterType="Addr">
   		UPDATE t_address
   		SET `name` = #{name},

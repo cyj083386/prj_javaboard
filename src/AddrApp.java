@@ -7,7 +7,7 @@ public class AddrApp {
 		
 		DBUtil db = new DBUtil();
 		Scanner scan = new Scanner(System.in);
-		db.init();
+		db.init(); // mybatis 설정 작업 실행
 
 		while(true) {
 			System.out.print("명령어를 입력해주세요 : ");
