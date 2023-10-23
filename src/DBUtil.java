@@ -47,6 +47,7 @@ public class DBUtil {
 		mapper.insertAddress(addr);
 		
 		session.commit(); // 여러 쿼리진행후 트랜잭션을 커밋. update, delete, insert
+		//이 부분은 service로 이동
 	}
 	
 	public void updateAddress(int id, String name, String address, String phone) {
