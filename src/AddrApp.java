@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+// controller
 public class AddrApp {
 
   public static void main(String[] args) {

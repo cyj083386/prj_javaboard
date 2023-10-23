@@ -1,3 +1,5 @@
+//DTO
+
 public class Addr {
 	private int id;
 	private String name;

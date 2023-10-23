@@ -6,6 +6,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
+// DAO, Mapper 사용하는곳
 public class DBUtil {
 //	각 기능을 메서드 형태로 제공
 
