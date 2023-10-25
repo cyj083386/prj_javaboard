@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.AddrMapper">
+    <select id="selectAll" resultType="model.Nonuser">
+		SELECT *
+		FROM nonuser
+    </select>
+
+	<!--파라미터는 1개밖에 받을수 없으므로 클래스 전체를 가져온다.-->
+    <select id="selectById" parameterType="model.Nonuser" resultType="model.Nonuser">
+		SELECT *
+		FROM nonuser
+		WHERE non_cp= #{non_cp}
+		ORDER BY reg_date DESC
+		LIMIT 1
+    </select>
+
+	<!--public void updateAddress(Addr addr); 를 바로 가져옴. 리턴이 없으므로 resultType 생략가능-->
+  	<insert id="create" parameterType="model.Nonuser">
+		insert into nonuser
+		set non_cp = #{non_cp},
+		non_name = #{non_name},
+		non_addr = #{non_addr},
+		non_Daddr = #{non_Daddr}
+  	</insert>
+
+	<!--public void updateAddress(Addr addr); 를 바로 가져옴. 리턴이 없으므로 resultType 생략가능-->
+	<update id="update" parameterType="model.Nonuser">
+		update nonuser
+		set  non_name = #{non_name},
+		non_addr = #{non_addr}
+		where non_cp= #{non_cp}
+	</update>
+
+	<!--public void deleteAddress(int id); 삭제시에는 id만 알면됨-->
+  	<delete id="delete" parameterType="model.Nonuser">
+		delete from nonuser
+		where non_cp=#{non_cp}
+  	</delete>
+  
+</mapper>

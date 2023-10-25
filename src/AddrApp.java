@@ -10,6 +10,7 @@ public class AddrApp {
 		Scanner scan = new Scanner(System.in);
 		db.init(); // mybatis 설정 작업 실행
 
+
 		while(true) {
 			System.out.print("명령어를 입력해주세요 : ");
 			String cmd = scan.nextLine();
