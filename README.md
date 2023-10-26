@@ -2,6 +2,7 @@
 
 2023년 하반기 진행한 CRUD 구현 클론코딩입니다.<br>
 MyBatis를 적용하였으나 연습을 위해 maven미사용, webview는 콘솔로 구현되어있습니다.<br>
+아래는 프로젝트별 간단한 개요이고, 자세한 readme 문서는 각 프로젝트 폴더 안에 기술되어 있습니다.<br>
 <br>
 <strong>1.prj_single_addr: 완료</strong><br>
 MyBatis로 주소 테이블1개에 대해 간단한 crud가 구현된 프로젝트입니다.<br>
