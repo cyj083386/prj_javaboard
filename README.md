@@ -1,6 +1,6 @@
 # prj_javaboard
 
-2023년 하반기 천재IT 교육센터에서 진행한 CRUD 구현 클론코딩입니다.<br>
+2023년 하반기 진행한 CRUD 구현 클론코딩입니다.<br>
 MyBatis를 적용하였으나 연습을 위해 maven미사용, webview는 콘솔로 구현되어있습니다.<br>
 <br>
 <strong>1.prj_single_addr: 완료</strong><br>
