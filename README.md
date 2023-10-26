@@ -14,5 +14,5 @@ MyBatis로 prj_postbox_original을 1차 repactoring한 프로젝트입니다.<br
 DAO에서는 로직, 각 메소드의 I/O은 기존과 동일하게 작성하고 내부 접근방식만 MyBatis로 변경하였습니다.<br>
 <br>
 <strong>3.prj_postbox_original</strong><br>
-java로 작성된 택배관리 프로그램입니다.<br>
+JAVA, JDBC  환경에서 작성된 택배관리 프로그램입니다.<br>
 prj_postbox_repactoring과 비교를 위해 업로드합니다.<br>
