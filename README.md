@@ -9,6 +9,6 @@ MyBatis로 주소 테이블1개에 대해 간단한 crud가 구현된 프로젝�
 코드에 주석으로 작성하기 어려운 내용은 블로그 글로 따로 작성하였습니다.(https://velog.io/@cyj083386/231022)<br>
 <br>
 <strong>2.prj_postbox_repactoring</strong><br>
-MyBatis로 repactoring한 프로젝트입니다.
+MyBatis로 repactoring한 프로젝트입니다.<br>
 <strong>3.prj_postbox_original</strong><br>
-java로 작성된 택배관리 프로그램입니다.
+java로 작성된 택배관리 프로그램입니다.<br>
