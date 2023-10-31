@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/prj_javaboard.iml" filepath="$PROJECT_DIR$/.idea/prj_javaboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/prj_postbox_repactoring/prj_postbox_repactoring.iml" filepath="$PROJECT_DIR$/prj_postbox_repactoring/prj_postbox_repactoring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/prj_single_addr/prj_single_addr.iml" filepath="$PROJECT_DIR$/prj_single_addr/prj_single_addr.iml" />
+    </modules>
+  </component>
+</project>
